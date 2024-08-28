@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Jersey+10&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>
         
 Layout
     
     </title>
     <style>
+
+    body
+    {
+   margin: 0; 
+    }
+
+
       header 
       {
-      border: solid thin black;
+      
       height: 250px;
       background-image: url("https://facts.net/wp-content/uploads/2023/07/16-facts-about-sunshine-1689735178.jpg");
       background-size: cover;
+      
+      
+
+       
       }
 
 
       nav 
       {
       height: 50px;
-      flex-direction: row;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      
+      
+     
+      
+      
+      
+
+      
+  
+
       
       
       }
       main 
       {
-        border: solid thin black;
+        
         margin-bottom: 20px;
       }
       section 
@@ -56,10 +81,10 @@ Layout
 
       footer 
       {
-        border: solid thin black;
+        
         padding-top: 70px; 
         padding-right: 70px; 
-        padding-bottom: 70px; 
+        padding-bottom: 100px; 
         padding-left: 70px; 
         text-align: center;
         
@@ -72,7 +97,7 @@ Layout
 
       background-color:gray;
 
-
+     
 
       }
 
@@ -80,7 +105,7 @@ Layout
       {
       background-color: lightgray;
       color:black;
-      transition-duration: 0.4s;
+      transition-duration: 0.4s
       }
       .knapp1:hover 
       { 
@@ -120,7 +145,75 @@ Layout
       .support
       {
         text-align: left;
+        
       }
+   
+.font
+{
+  
+  font-family: "Jersey 10", sans-serif;
+
+}
+.rubriken 
+{
+font-family: "Baskervville SC", serif;
+
+
+}
+ul 
+{
+list-style-type: none;
+margin: 0; 
+padding: 0; 
+overflow: hidden;
+background-color: #333;
+width: 100%;
+
+}
+
+
+li
+{
+float:left;
+
+}
+
+li a 
+{ 
+display: block;
+color:white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+
+
+
+}
+
+li a:hover 
+{
+  background-color: #111;
+}
+.active 
+{ 
+  background-color: #04AA6D;
+}
+.copyright 
+{
+position:absolute;
+left: 45%;
+bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
       
     </style>
 </head>
@@ -132,26 +225,26 @@ Layout
 
 <nav>
 
-  <button class ="knapp1">
-   Knapp 1
-  </button>
-    <button class="knapp2"> 
-    Knapp 2 
-    </button>
-    <button class="knapp3">
-    Knapp 3 
-    </button> 
-    <button class ="knapp4">
-      Knapp 4 
-      </button> 
+
+  <ul>
+
+   <div class="active"> <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">Home</a></li>
+    <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">News</a></li>
+    <li><a href ="https://www.w3schools.com/html/default.asp"target="_blank">About</a></li>
+    <li><a href ="https://www.w3schools.com/html/default.asp"target="_blank">Contact</a><li> </div>
+    </a>
+    
+    </ul>
+
+  
 </nav>
 <main>
 <section>
-   <h1> Plats olika annat, sig.</h1>
+ <div class="rubriken"><h1> Plats olika annat, sig.</h1></div>
 
-    <p>Löksås ipsum i kom flera där hans så, kan sällan år regn ska icke, jäst hwila se nu smultron sjö. Hela samma är sista precis inom där som hwila, blev plats där ännu mot erfarenheter sjö i, precis se blev stora äng se hela. Hav vidsträckt ska dock stora vad äng hans kanske hela, inom göras verkligen mjuka när bra hela rot, tiden själv mot sällan och tidigare både se.</p>
+ <div class="font"> <p>Löksås ipsum i kom flera där hans så, kan sällan år regn ska icke, jäst hwila se nu smultron sjö. Hela samma är sista precis inom där som hwila, blev plats där ännu mot erfarenheter sjö i, precis se blev stora äng se hela. Hav vidsträckt ska dock stora vad äng hans kanske hela, inom göras verkligen mjuka när bra hela rot, tiden själv mot sällan och tidigare både se.</p>
     
-    <p>Rot ingalunda groda strand gamla tid helt ordningens sax faktor, precis i därmed som sista gamla icke räv precis ingalunda, omfångsrik annat annan av där sorgliga hela nu. Och sitt därmed sjö dimma olika tre olika ordningens dag, regn kanske tiden rännil verkligen varit lax rot se ska, gör bäckasiner vad groda ska år kom har. Därmed där rännil enligt sällan varit därmed, blev hela enligt det dunge vad tre, träutensilierna som söka häst upprätthållande.</p>
+    <p>Rot ingalunda groda strand gamla tid helt ordningens sax faktor, precis i därmed som sista gamla icke räv precis ingalunda, omfångsrik annat annan av där sorgliga hela nu. Och sitt därmed sjö dimma olika tre olika ordningens dag, regn kanske tiden rännil verkligen varit lax rot se ska, gör bäckasiner vad groda ska år kom har. Därmed där rännil enligt sällan varit därmed, blev hela enligt det dunge vad tre, träutensilierna som söka häst upprätthållande.</p></div>
 </section>
 </main>
 <footer>
@@ -161,7 +254,7 @@ Layout
  <b>Support:</b>
  SupportMail@gmail.com
   </div>
-  <div>
+  <div class="copyright">
   Copyright Paavo <i>2024 </i>
   </div>
   
