@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+
+        <title>Layout 3 </title>
+        <script>
+         function closeMenu()
+         {
+            document.querySelector("nav").style.marginLeft = "-270px";
+            document.querySelector("#closemenu").style.display = "none";
+            document.querySelector("#openmenu").style.display = "inline";
+            document.querySelector("main").style.marginLeft = "30px"
+         }
+         function openMenu()
+         {
+            document.querySelector("nav").style.marginLeft = "0px";
+            document.querySelector("#closemenu").style.display = "inline";
+            document.querySelector("#openmenu").style.display = "none";
+           document.querySelector("main").style.marginLeft = "300px"
+
+
+         }
+          
+        
+         
+
+            </script>
+    
+        <style>
+        @media screen and (max-width: 1000px)
+        {
+        nav
+        {
+            margin-left: -270px;
+
+        }
+        #closemenu 
+        {
+            display: none;
+
+        }
+        #openmenu
+        {
+            display: inline;
+        }
+        }
+       @media screen and (min-width: 1001px)
+        
+            {
+        nav
+        {
+            margin-left: 0px;
+
+        }
+        #closemenu 
+        {
+            display: inline;
+
+        }
+        #openmenu
+        {
+            display: none;
+        }
+        }
+
+        nav 
+        {
+            position:fixed; 
+            top: 0px;
+            left: 0px; 
+            height: 100%;
+            width: 300px;
+            background-color: #960d03;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            transition: margin-left 0.5s; 
+          
+        }
+        nav > a 
+        {
+            color:#ffffff;
+            text-decoration: none;
+            font-size: 14pt;
+        }
+        main
+        {
+            margin-left: 300px;
+            display:flex;
+            flex-wrap: wrap;
+            transition: margin-left 0.5s;
+            
+            
+            
+            
+
+        }
+
+       div.card
+       {
+        width: 200px;
+        height: 250px;
+        overflow: hidden;
+        /* border: 1px solid #cdcdcd; */
+        filter:drop-shadow(0px 0px 3px #cdcdcd);
+        background-color: darkred;
+        margin: 10px;
+        font-family: "Marcellus SC", serif;
+        text-align: center;
+        
+        
+       }
+
+     div.card > img 
+     {
+        width: 100%;
+        margin: none;
+     }
+     div.card > h1 
+     {
+        font-size: 12pt;
+     }
+     body
+     {
+    background-color: black;
+     }
+     #closemenu, #openmenu
+     {
+        width: 20px;
+        position: absolute;
+        top: 5px; 
+        right: 5px;
+        cursor:pointer;
+     }
+
+    
+
+
+            </style>
+        </head>
+        <body>
+            <nav>
+  
+               <img id="closemenu" src="m2i8G6G6b1m2A0G6.png" onclick="closeMenu()">
+               <img id="openmenu" src="m2i8G6G6b1m2A0G6.png" onclick="openMenu()">
+                <a href="">Knapp 1</a>
+                <a href="">Knapp 2</a>
+                <a href="">Knapp 3</a>
+            
+                </nav>
+                 
+             <main>
+
+<div class="card">
+    <h1>Gordon Ramsey</h1>
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6ccabba-ea38-411f-a673-04f26b5e919c_980x980.jpeg">
+        <p>Produktbeskrivning</p>
+
+</div>
+
+<div class="card">
+    <h1>Lam sauce</h1>
+    <img src="https://pearlriver.com/cdn/shop/files/MLL-HST0MamaLam_sMalaysianTraditionalHotOil.jpg?v=1685048605">
+        <p>Produktbeskrivning</p>
+
+</div>
+<div class="card"> 
+    <h1>24K Golden Hamburger</h1>
+    <img src="https://static.toiimg.com/thumb/imgsize-1703645,msid-81760449,width-600,height-335,resizemode-75/81760449.jpg">
+        <p>Produktbeskrivning</p>
+
+</div>
+<div class="card">
+    <h1>24K Golden Steak</h1>
+    <img src="https://preview.redd.it/p9u203dz25171.jpg?width=1080&crop=smart&auto=webp&s=3c1a5ae4e90107f47b49f473148d532bc4e2187f">
+
+</div>
+<div class="card">
+    <h1>5 star meal</h1>
+    <img src="https://tbbreality.wordpress.com/wp-content/uploads/2013/03/img_5025.jpg?w=210">
+        <p>Produktbeskrivning</p>
+
+</div>
+<div class="card">
+    <h1>24K Golden Grilled Sandwich</h1>
+    <img src="https://culturecheesemag.com/wp-content/uploads/2014/12/expensivegrilledcheese_ftr.jpg">
+        <p>Produktbeskrivning</p>
+
+</div>
+
+<div class="card">
+    <h1>Produktnamn</h1>
+    <img src="">
+        <p>Produktbeskrivning</p>
+
+</div>
+<div class="card"> 
+    <h1>Produktnamn</h1>
+    <img src="">
+        <p>Produktbeskrivning</p>
+
+</div>
+<div class="card">
+    <h1>Produktnamn</h1>
+    <img src="">
+        <p>Produktbeskrivning</p>
+
+</div>
+<div class="card">
+    <h1>Produktnamn</h1>
+    <img src="">
+        <p>Produktbeskrivning</p>
+
+</div>
+
+
+             </main>
+
+
+            </body>
+</html>
