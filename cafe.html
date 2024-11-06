@@ -17,8 +17,7 @@
 body
 {
 margin: 0;
-margin-bottom: 4000px;
-background-color: steelblue;
+background-image: url("whitedot.jpg");
 
 }
 
@@ -31,13 +30,13 @@ background-color: steelblue;
     height: 75px;
    display: flex;
    justify-content: center;
-   
+   z-index: 1000;
    
 }
 .topnav a
 {
    
-    color: #f2f2f2;
+    color: steelblue;
     text-align: center;
     padding: 22px 16px;
     text-decoration: none;
@@ -62,19 +61,7 @@ font-size: 40px;
 }
 
 
-.tabell
-{
-    display: flex;
-    flex-direction: column;
-    border: solid;
-    border-color: black;
-    margin-left: 750px;
-    margin-top: 100px;   
-    margin-right: 750px;
-    padding-bottom: 100px;
-    color: white;
-    font-size: 20px;
-}
+
 div.cafe
 {
     background-image: url("https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg");
@@ -86,19 +73,16 @@ div.cafe
 }
 .cafe2
 {
-background-image: url("https://img.freepik.com/premium-photo/cup-coffee-table-cafe_1111209-34266.jpg");
-width: 100%;
-height: 1200px;
-background-repeat: no-repeat;
+
+
 
 }
 
 .cafe3
 {
-    background-image: url("");
-    width: 100%;
-    height: 1000px;
-    background-repeat: no-repeat;
+    margin-left: 25%;
+    margin-right: 20%;
+    font-size: 20px;
    
   
 }
@@ -109,6 +93,49 @@ div.cafe, div.coffee
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+}
+.text
+{
+    color: ghostwhite;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 75px;
+}
+
+#why
+{
+    display: inline-block;
+font-size: 35px;
+margin-left: 45%;
+margin-right: 45%;
+margin-top: 75px;
+
+
+}
+
+#info
+{
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 45%;
+    margin-top: 200px;
+}
+
+.common
+{
+font-size: 20px;
+margin-left: 25%;
+margin-right: 20%;
+margin-top: 75px;
+
+}
+.map
+{
+  margin-top: 500px;
+   
+  
+    
 }
 
 
@@ -129,10 +156,9 @@ div.cafe, div.coffee
     
 <nav>
     <div class="topnav">
-        <a href="#"><b>Fikor</b></a>
-        <a href="#"><b>Priser</b></a>
-        <a href="#"><b>Öppentider</b></a>
-        <a href="#"><b>Kontakt</b></a>
+        <a href="#random"><b>Priser</b></a>
+        <a href="#öppentider"><b>Öppentider</b></a>
+        <a href="#map"><b>Karta</b></a>
     </nav>
 
 
@@ -140,7 +166,10 @@ div.cafe, div.coffee
 <div class="coffee"> <b><a id="test">Du behöver en kopp kaffe... </a></b> </div>
 
     
-
+<div class="text"><b>Välkommen till den <u>bästa</u> cafféen</b> 
+        <p><b><span style="color:lime">Öppet</span>:</b> Mån-Lör / 11.00 - 17.00 </p>
+        <p><b><span style="color: red">Stängt</span>: Sön</b></p>
+</div>
 
 
 
@@ -155,8 +184,26 @@ div.cafe, div.coffee
         </section>
 <div class="cafe2"> </div>
         <footer>
-<div class="cafe3"> </div>
+            <a id="why"><b>   Varför oss?</a></b>
+<div class="cafe3"><p id="random">Löksås ipsum färdväg kan mjuka ska ordningens rot kunde hela, sorgliga äng bland som därmed hela hav av omfångsrik, själv del och stig dag träutensilierna stig äng. Del jäst annat upprätthållande erfarenheter plats ta tiden där, varit gamla händer icke flera söka kanske helt, har sitt det sista annan vad upprätthållande. Träutensilierna redan dimmhöljd annan hela del groda för brunsås av, verkligen samma dock smultron där rot bäckasiner tre dimmhöljd träutensilierna, vad plats denna kan lax precis söka blivit.</p>
+
+   <p> Erfarenheter därmed bland häst sjö samma har helt, miljoner räv bland redan det hela, räv hela stora varit och hela. Samma sällan helt sjö ta för söka enligt om, genom år från lax helt plats för nu, annan gamla träutensilierna faktor inom se sällan. Det ser dag kanske tiden blivit kunde smultron brunsås tiden, av år stig färdväg både omfångsrik björnbär därmed, dock kan blivit kunde björnbär sig ska år. </p>
+</div>
             </footer>
+    <a id="info"> <b>  Generell Info         </b>   </a> 
+<div class="common">
+    <p>Hela ännu åker tiden därmed att vemod där händer, regn sorgliga bäckasiner regn brunsås dimmhöljd hwila, precis som faktor sig gamla i sax. Och där olika som miljoner ingalunda är hav erfarenheter stig denna, så äng annan björnbär vemod oss häst miljoner varit, där fram nu sin äng dunge färdväg annat precis. Bäckasiner hela färdväg bland ta strand annan enligt ordningens verkligen, hav tid göras sax varit erfarenheter strand för, sällan kan smultron och stora sällan hans erfarenheter.</p>
+
+ <p id="öppentider">   Om sjö tid trevnadens om precis som ordningens blivit, rännil färdväg fram både sällan samma och, dimma icke enligt vi åker se sitt. Om hans som sin räv nya sax strand, bäckasiner där söka bland söka strand ta upprätthållande, se bra träutensilierna bäckasiner att från. Ännu sin är björnbär vidsträckt att från brunsås det brunsås det, samtidigt både händer miljoner kunde enligt trevnadens på sorgliga, del bäckasiner söka sjö sista helt händer dag ingalunda.</p>
+  <p>Dessutom så är vi <span style="color: lime"><b>öppet</b></span> Mån-Lör. 11.00-17.00. Vi är <span style="color:red"><b>stängda</b></span> på söndagar. Kom och njut!</p> 
+</div>
+
+
+
+<div class="map">
+   <b id="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6724.715512620391!2d24.13488838173428!3d65.83462347798763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d547a097a7424d%3A0xcbbbf90b8c8afa50!2sHaparanda%20Stadshotell!5e0!3m2!1sen!2sse!4v1729665249660!5m2!1sen!2sse" width="1903" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></b>
+
+</div>
 
     </body>
 
