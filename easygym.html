@@ -5,18 +5,38 @@
 
 
 <style>
-body
+
+nav
+{
+background-image: url("logotype.jpg");
+width: 100%;
+
+
+}
+
+
+
+
+html, body 
 {
     background-color: #1c1c1c;
-     
-    padding-bottom: px;
     margin: 0;
-    margin-bottom: 1000px;
+    height: 100%;
+    
+    
+}
+
+footer
+{
+    background-color: black;
+   
+    
+    
 }
 
 .topnav
 {
-    background-color: #001212;
+    background-color: white;
     overflow: hidden; 
     position: fixed;
     width: 100%;
@@ -25,12 +45,12 @@ body
    display: flex;
    justify-content: center;
    
-   
+   z-index: 999;
 }
 .topnav a
 {
    
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 22px 16px;
     text-decoration: none;
@@ -42,7 +62,7 @@ body
 
 .homescreen
 {
-    background-image: url("test.jpg");
+    background-image: url("easylobby.jpg");
     width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
@@ -53,31 +73,42 @@ body
 {
     display: inline-block;
     margin-top: 200px;
-    margin-left: 42%;
+    margin-left: 40%;
     font-size: 75px;
-    color: black;
+    color: whitesmoke;
+
     
 }
 
 .bild1
 {
-    background-image: url("");
-    color: green;
-    border: solid;
+    background-image: url("treadmill.jpg");
    width: 50%;
   height: 500px;
+  transition: 1s;
+}
 
+.bild1:hover
+{
+    opacity: 0.7;
 }
 
 .bild2
 {
+    background-image: url("bänk2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: inline-block;
     display: flex;
     justify-content: end;
-    border: solid;
+    
     width: 50%;
-    height: 500px;
-   
+    transition: 1s;
+}
+
+.bild2:hover
+{
+    opacity: 0.7;
 }
 
 .bilder
@@ -88,20 +119,35 @@ body
 
 .text
 {
-    background-image: url("");
+    background-image: url("gym.jpg"); 
+    background-size: cover;
+    
     color: white;
-    border: solid;
+  
    width: 50%;
   height: 500px;
+ transition: 1s;
+}
 
+.text:hover
+{
+    opacity: 0.7;
 }
 
 .foot
 {
-    border: solid;
+    background-image: url("gymroom.jpg");
+    background-size: cover; 
+    
+    
     width: 50%;
     height: 500px;
-   
+   transition: 1s;
+}
+
+.foot:hover
+{
+    opacity: 0.7;
 }
 
 .textfoot
@@ -110,6 +156,105 @@ body
     flex-flow: row;
 }
 
+.why
+{
+    color: white;
+    margin-left: 43%;
+    margin-top: 200px;
+    font-size: 50px;
+}
+
+.exp
+{
+    color: white;
+    margin-top: 50px;
+    margin-left: 300px;
+    
+}
+
+.logo
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 75px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+#run
+{
+    font-size: 45px;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: 25px;
+    color: white;
+}
+
+#benchpress
+{
+    font-size: 45px;
+    color: black;
+    margin-right: 42%;
+    margin-top: 25px;
+}
+
+#machine
+{
+    font-size: 45px;
+    color: black;
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 25px;
+}
+
+#weight
+{
+    font-size: 45px;
+    color: white;
+    display: inline-block;
+    margin-left: 36%;
+    margin-top: 25px;
+}
+
+.how
+{
+    font-size: 50px;
+    color: whitesmoke;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.payment
+{
+    color: white;
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.something
+{
+    font-size: 20px;
+    color: white;
+   margin-left: 100px;
+   margin-top: 25px;
+   
+    
+}
+
+
+.map
+{
+    margin-top: 500px;
+}
+
+
+
+
 
     </style>
 
@@ -117,30 +262,59 @@ body
 
 <body>
 
+    <img src="logotype.jpg" class="logo">
+  
     <nav>
         <div class="topnav">
-    <a href="#price"><b>Gymkort </b></a>
+    <a href="#howpay"><b>Gymkort </b></a>
     <a href="#info"><b>Info</b></a>
-    <a href="#tips"><b>Tips</b></a>
-    <a href="#contact2"><b>Support</b></a>
+    <a href="#karta"><b>Karta</b></a>
+    <a href="#howpay"><b>Support</b></a>
     
     </div>
         </nav>
-<div class="homescreen"><a id="easygym1"><b> Easygym </b> </a></div>
+<div class="homescreen"><a id="easygym1"><b> Välkommen!</b> </a></div>
 
 <div class="bilder">
-<div class="bild1"> <a> bild 1 </a>   </div> <div class="bild2"> <a> bild 2 </a>   </div>
+<div class="bild1"> <a id="run"> <b> Löpband </b>  </a>   </div> <div class="bild2"> <a id="benchpress"> <b> Bänkpress </b> </a>   </div>
 
 </div>
 <div class="textfoot">
-<div class="text"> text</div> <div class="foot"> footer </div>
+<div class="text"> <a id="machine"> <b> Många maskiner </b> </a> </div>  <div class="foot"> <a id="weight"> <b> Lösvikter </b> </a> </div>
 
    </div>
 
+<div class="why"> <a id="info"> <b>Varför oss?</b> </a> </div>
+
+<div class="exp"> <p> Easygym erbjuder dig en av de bästa gym upplevelserna i Haparanda. Gymmet är öppet dygnet runt och har alla möjliga maskiner, dusch, bastu och mycket mer! Vi vid Easygym bryr om </p>
+<p>våra kunder, och kollar att gymmet är i top skick hela tiden. Dessutom så är priserna mycket billiga jämfört med andra lokala gymmer. Sedan så kan du också kontakta support hur lätt som helst,</p>
+<p>genom att bara ringa till personalen. </p> </div> 
 
 
+<div class="how"> <b id="howpay"> Hur betalar jag? </b>  </div>
+<div class="payment"> </p> Du betalar genom <span style="color: lime">Swish. </span> När du betalar så kommer din telefonnummer att aktiveras inom en dag, så att du kan ringa till dörren för att den ska öppna automatiskt. <span style="color: lime">Swish </span> numret är: : + 123 162 56 64 </p>
+  <p>  Nummren för att öppna upp dörren: +358 44 7056159 </p>
+  <p>  Om dörren inte öppnar sig, så kan du ringa till Risto. Nummer: : +358 40 766 6165 </p>
+     <p> <span style="color: red;"> <u>OBS</u>! </span> Tänk på att det kan ta upp till 24 timmar för dig att bli inlagt in i systemet. </p>
+</div>
+
+
+<footer>
+<div class="map"> <a id="karta"> </a>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.52201111777066!2d24.140160154070635!3d65.83815096524971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d547a0477cc69f%3A0x21d2054db457520!2sEasy%20Gym!5e0!3m2!1sen!2sse!4v1733128307629!5m2!1sen!2sse" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+
+
+<div class="something"><p><u><b>Kontakt</b></u></p>
+    <p>Address: : Haparanda, Strandgatan 33   <p> 
+<p>telefonnummer för kontakt: <br>
+    +358 40 766 6165  </p>
+<p>Email:    </p> 
+<p><i>Copyright: Paavo 2024 </i> </p> </div>
+
+</footer>
 
     </body>
 
 </html>
-a
